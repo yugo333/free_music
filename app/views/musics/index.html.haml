@@ -1,5 +1,30 @@
-- @musics.each do |music|
-  =music.name
-  =music.BPM
-  %br/
-  %p= music.mp3
+.front
+  .front_top
+    The Free Sound
+    .front_bottom
+      = link_to "https://www.instagram.com/___u5____/?hl=ja", class: "contents__btn" do
+        = icon('fab', 'instagram',class: 'icon')
+        instagram
+      = link_to "https://twitter.com/", class: "contents__btn" do
+        = icon('fab', 'twitter',class: 'icon')
+        twitter
+      = link_to "https://www.youtube.com/channel/UChAhO3nKwVdZ5GYMF-HkE1g?view_as=subscriber", class: "contents__btn" do
+        = icon('fab', 'youtube',class: 'icon')
+        youtube
+  .front_middle
+    %img{:alt => "disco", :src => "YJJD2cVzbX9cIJT1576818499_1576818512.png", :title => "geek", :class =>"geek"}/
+    .front_title
+      Royalty Free Music
+  .front_box
+    - @musics.each do |music|
+      .list
+        TITLE:
+        =music.name
+        BPM : 
+        =music.BPM
+        %a{:download => "music.mp3", :href => "u5_music"}
+          %img{:alt =>"btn", :src =>"btn.png",class: "btn"}
+
+
+
+
