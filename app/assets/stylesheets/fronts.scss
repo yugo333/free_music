@@ -28,7 +28,9 @@
     margin-right: 10px;
     text-decoration: line-through;
     color: blueviolet;
-    
+  }
+  .icon{
+    font-size: 2em;
   }
 
   &_middle{
@@ -160,6 +162,10 @@
     color: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  &_send:hover {
+    text-shadow: 0 0 10px #aaaaaa;
+    opacity:0.6;
   }
 }
 * {

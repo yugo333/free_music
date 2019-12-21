@@ -1,0 +1,92 @@
+.front{
+  height: 100%;
+  width: 100%;
+  background-color: #cccccc;
+
+  &_top{
+    height: 100px;
+    background-color: rgb(0, 17, 24);
+    box-sizing: border-box;
+    font-style: italic;
+    text-decoration: line-through;
+    line-height: 100px;
+    padding-left: 30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px silver;
+    font-weight: bold;
+  }
+  .front_bottom{
+    font-family: FontAwesome;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: blueviolet;
+    
+  }
+  &_middle{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+
+    .front_title{
+      position: absolute;
+      left: 0px;
+      top: -20px;
+      margin-top: 0px;
+      padding-left: 28%;
+      font-weight: bold;
+      font-size: 80px;
+      font-family: 'Impact';
+      transform: rotate(-7deg);
+      display: inline-block;
+      color: #DA8E00;
+      background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .geek{
+      width: 100%;
+      
+    }
+  }
+    .front_box{
+      box-sizing: content-box;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 10%;
+      margin-left: 1%;
+      
+      .list{
+        z-index: 5;
+        border-bottom: double 1px  #000;
+        box-sizing: content-box;
+        width: 50%;
+        font-family: 'arial black';
+        padding: 5px;
+        margin: 0 auto;
+        background-color: rgb(71, 134, 141);
+        height: 100px;
+        line-height: 100px;
+        text-shadow: 5px 3px 1px #504f4f;
+        font-size: 25px;
+        opacity:0.9;
+      }
+        
+      a{
+        position: relative;
+        top: 10%;
+        width: 100%;
+        left: 30%;
+      }
+      .btn:hover {
+        box-shadow: 0 0 10px #ffffff;
+      }
+      .btn:active {
+        /*押したとき*/
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+      }
+    }  
+}
