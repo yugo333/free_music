@@ -1,0 +1,25 @@
+.front
+  .front_top
+    The Free Sound
+    .front_bottom
+      = link_to "https://www.instagram.com/___u5____/?hl=ja", class: "contents__btn" do
+        = icon('fab', 'instagram',class: 'icon')
+        instagram
+      = link_to "https://twitter.com/", class: "contents__btn" do
+        = icon('fab', 'twitter',class: 'icon')
+        twitter
+      = link_to "https://www.youtube.com/channel/UChAhO3nKwVdZ5GYMF-HkE1g?view_as=subscriber", class: "contents__btn" do
+        = icon('fab', 'youtube',class: 'icon')
+        youtube
+  .front_middle
+    %img{:alt => "mpc3000pic", :src => "NPHybAPgdWZZy5T1576731665_1576731679.png", :title => "mpc3000",:class =>"pic"}/
+    .noise
+    %img{:alt => "ni", :src => "nnize.png", :title => "noise", :class =>"noise"}/
+    .flash
+      .skew
+        .glitch
+          %img{:alt => "loglog", :src => "U5.png",:class => "logo"}/
+  .front_send
+    = link_to musics_path(@music) do
+      Download 
+

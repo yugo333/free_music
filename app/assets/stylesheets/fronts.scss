@@ -1,0 +1,172 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.front{
+  height: 100%;
+  width: 100%;
+  background-color: #cccccc;
+
+  &_top{
+    height: 100px;
+    background-color: rgb(0, 17, 24);
+    box-sizing: border-box;
+    font-style: italic;
+    text-decoration: line-through;
+    line-height: 100px;
+    padding-left: 30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px silver;
+    font-weight: bold;
+  }
+  .front_bottom{
+    font-family: FontAwesome;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: blueviolet;
+    
+  }
+
+  &_middle{
+    position: relative;
+    .pic{
+      width: 100%;
+      height: calc(100vh - 100px);
+    }
+    .noise{
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 90%;
+    }
+    .noise{
+      // background: url(nnize.png);
+      animation: anima 1s steps(10) infinite;
+      opacity:0.1;
+    }
+    
+    @keyframes anima {
+      from { background-position: 0 0;
+       }
+      to { background-position: 123px 456px; 
+      }
+    }
+      
+
+    .logo{
+      width: 40%;
+      height: 100%;
+    }
+    .flash {
+      position: absolute;/*絶対配置*/
+      color: white;/*文字は白に*/
+      top: 5%;
+      left: 40%;
+      
+      animation: flash .03s infinite;
+    }
+    @keyframes flash {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: .8;
+      }
+    }
+    .skew {
+      animation: skew 3s infinite;
+    }
+    @keyframes skew {
+      0% {
+        transform: none;
+      }
+      33% {
+        transform: none;
+      }
+      33.3% {
+        transform: skewX(30deg);
+      }
+      33.6% {
+        transform: skewX(-30deg);
+      }
+      33.9% {
+        transform: none;
+      }
+      66% {
+        transform: none;
+      }
+      66.3% {
+        transform: skewX(5deg);
+      }
+      66.6% {
+        transform: skewX(-5deg);
+      }
+      66.9% {
+        transform: none;
+      }
+      77% {
+        transform: none;
+      }
+      77.3% {
+        transform: skewX(15deg);
+      }
+      77.6% {
+        transform: skewX(-15deg);
+      }
+      77.9% {
+        transform: none;
+      }
+    }
+    .glitch {
+      animation: glitch .3s both infinite;
+    }
+    @keyframes glitch {
+      0% {
+        transform: translate(0);
+      }
+      12.5% {
+        transform: translate(-1px, 1px);
+      }
+      37.5% {
+        transform: translate(-1px, -1px);
+      }
+      62.5% {
+        transform: translate(1px, 1px);
+      }
+      87.5% {
+        transform: translate(1px, -1px);
+      }
+      100% {
+        transform: translate(0);
+      }
+    }
+  }
+  &_send{
+    font-weight: bold;
+    font-size: 70px;
+    text-align:center;
+    position: absolute;
+    height: 26%;
+    bottom: 9px;
+    right: 35.5%;
+    text-decoration: line-through;
+    background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    background: linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    mix-blend-mode: screen;
+    color: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
