@@ -1,0 +1,17 @@
+= link_to"back（ダウンロードページ）",musics_path 
+%br
+%br
+= link_to "新規投稿",new_music_path
+%br
+%br
+.list
+  = @musics.each do |music|
+    %h1= music.id
+    %h2= link_to music.name,music_path(music)
+    %h3= music.BPM
+    %h3= music.mp3
+    %h3= music.youtube
+    = link_to "編集",edit_music_path(music)
+    = link_to "削除",music_path(music), method: :delete, data:{confirm: "Are You Sure???"}
+    %br
+    %br

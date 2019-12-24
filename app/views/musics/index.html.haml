@@ -22,8 +22,12 @@
         =music.name
         BPM : 
         =music.BPM
-        %a{:download => "music.mp3", :href => "u5_music"}
+        %a{:download => "#{music.name}", :href => "#{music.mp3}"}
           %img{:alt =>"btn", :src =>"btn.png",class: "btn"}
+        .play_btn
+        = link_to "https://www.youtube.com/channel/UChAhO3nKwVdZ5GYMF-HkE1g?view_as=subscriber"do
+          = icon('fab', "play-circle",class: 'play')
+          play
 
 
 

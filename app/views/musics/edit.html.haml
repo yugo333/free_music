@@ -1,6 +1,6 @@
-.new
-  NEW_SOUND
-  = form_for :music, url:musics_path do |f|
+.edit
+  EDIT_SOUND
+  = form_for :music, url: music_path, method: :patch do |f|
     = f.text_field :name,placeholder: 'name'
     %br/
     = f.text_field :BPM,placeholder: 'BPM'

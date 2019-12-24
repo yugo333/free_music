@@ -17,7 +17,7 @@
     font-weight: bold;
   }
   .front_bottom{
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     font-weight: bold;
     font-size: 20px;
     float: right;
@@ -74,19 +74,39 @@
         font-size: 25px;
         opacity:0.9;
       }
-        
+
       a{
-        position: relative;
-        top: 10%;
-        width: 100%;
-        left: 30%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -47px;
+        height: 40px;
+        // position: relative;
+        // top: 10%;
+        // padding-left: 30px;
+        // left: 30%;
+        .btn:hover {
+          box-shadow: 0 0 10px #ffffff;
+        }
+        .btn:active {
+          /*押したとき*/
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+        }
       }
-      .btn:hover {
-        box-shadow: 0 0 10px #ffffff;
+      .play{
+        font-family: "Font Awesome 5 Free";
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 25px;
+        margin-right: 20px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 40px;
+        color: rgb(123, 0, 139);
       }
-      .btn:active {
-        /*押したとき*/
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+      .play_btn{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -68px;
       }
     }  
 }

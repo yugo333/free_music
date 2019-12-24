@@ -15,7 +15,8 @@ ActiveRecord::Schema.define(version: 20191220090020) do
   create_table "musics", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                     null: false
     t.integer  "BPM"
-    t.text     "mp3",        limit: 65535, null: false
+    t.string   "mp3",                      null: false
+    t.text     "youtube",    limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
