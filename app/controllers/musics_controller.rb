@@ -1,5 +1,6 @@
 class MusicsController < ApplicationController
 
+  before_action :login_check, only: [:new, :edit, :update, :destroy]
   
   def index
     @musics = Music.all
@@ -43,6 +44,13 @@ class MusicsController < ApplicationController
   end
 
   def music_params
-    params.require(:music).permit(:name, :BPM, :mp3,:youtube)
+    params.require(:music).permit(:name, :BPM, :mp3,:youtube).merge(user_id: current_user.id)
+  end
+
+  def login_check
+    unless user_signed_in?
+      flash[:alert] = "ログインしてください"
+      redirect_to root_path
+    end
   end
 end
