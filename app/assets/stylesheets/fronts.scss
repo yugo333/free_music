@@ -46,8 +46,8 @@
       height: 90%;
     }
     .noise{
-      // background: url(nnize.png);
-      animation: anima 1s steps(10) infinite;
+      background: url(nnize.png);
+      animation: noise_anima 1s steps(10) infinite;
       opacity:0.1;
     }
     
@@ -57,7 +57,7 @@
       to { background-position: 123px 456px; 
       }
     }
-      
+
 
     .logo{
       width: 40%;
@@ -167,7 +167,13 @@
     text-shadow: 0 0 10px #aaaaaa;
     opacity:0.6;
   }
+
 }
+.bottme__right--btn{
+  position: relative;
+  opacity: 0;
+}
+
 * {
   margin: 0;
   padding: 0;

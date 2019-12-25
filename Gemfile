@@ -57,3 +57,5 @@ gem 'haml-rails'
 gem "font-awesome-sass"
 
 gem 'carrierwave'
+
+gem 'devise'
