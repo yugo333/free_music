@@ -14,7 +14,7 @@ class MusicsController < ApplicationController
     @music = Music.new(music_params)
                    #  (params[:music])
     if@music.save
-    redirect_to music_path(@music)
+    redirect_to divisions_path(@music)
     else
       render :new
     end
