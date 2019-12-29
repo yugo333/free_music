@@ -1,8 +1,9 @@
 .front{
   height: 100%;
   width: 100%;
-  background-color: #cccccc;
-
+  background-color: hsl(0, 0%, 80%);
+  position: absolute;
+  z-index: 10;
   &_top{
     height: 100px;
     background-color: rgb(0, 17, 24);
@@ -26,6 +27,9 @@
     color: blueviolet;
     
   }
+
+
+  
   &_middle{
     width: 100%;
     position: absolute;
@@ -53,6 +57,7 @@
     }
   }
     .front_box{
+      position: relative;
       box-sizing: content-box;
       display: flex;
       flex-direction: column-reverse;
@@ -60,7 +65,7 @@
       margin-left: 1%;
       
       .list{
-        z-index: 5;
+        // z-index: 5;
         border-bottom: double 1px  #000;
         box-sizing: content-box;
         width: 50%;
@@ -110,17 +115,29 @@
       }
     }  
 }
-// #modal-content{
-//   height: 50%;
-//   width:50%;
-//   margin:1.5em auto 0;
-//   padding:10px 20px;
-//   border:2px solid #aaa;
-//   background:#fff;
-//   z-index:900;
-//   position:fixed;
-//   opacity: 0.9;
-// }
+#modal-content_lefth{
+  height: 50%;
+  width:19%;
+  margin:9em auto 0;
+  padding:10px 20px;
+  border:2px solid #aaa;
+  background:#fff;
+  z-index:900;
+  position:fixed;
+  opacity: 0.9;
+}
+#modal-content_right{
+  height: 76%;
+  width:20%;
+  margin:9em auto 0;
+  margin-left: 77%;
+  padding:10px 20px;
+  border:2px solid #aaa;
+  background:#fff;
+  z-index:900;
+  position:fixed;
+  opacity: 0.9;
+}
 
 // .modal-p{
 //   margin-top:1em;

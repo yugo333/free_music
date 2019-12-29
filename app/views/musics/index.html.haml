@@ -28,15 +28,21 @@
         = link_to "#{music.youtube}"do
           = icon('fab', "play-circle",class: 'play')
           play
-#modal-content
+#modal-content_lefth
   %script{:async => "", :src => "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
   / 正方形 大
   %ins.adsbygoogle{"data-ad-client" => "ca-pub-5904820633255645", "data-ad-format" => "auto", "data-ad-slot" => "8108961412", "data-full-width-responsive" => "true", :style => "display:block"}
   :javascript
     (adsbygoogle = window.adsbygoogle || []).push({});
+#modal-content_right
+  %script{:async => "", :src => "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
+  / たて
+  %ins.adsbygoogle{"data-ad-client" => "ca-pub-5904820633255645", "data-ad-slot" => "9418091819", :style => "display:inline-block;width:300px;height:600px"}
+  :javascript
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
   -# %p
-    -# %a#modal-close.button-link 閉じる
-    -# %a{:href => "javascript:;", :onclick => "window.close();"}tojiru
+  -#   %a#modal-close.button-link 閉じる
 -# #modal-overlay
 -# #modal-open.button-link
 
