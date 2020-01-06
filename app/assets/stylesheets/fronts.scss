@@ -34,29 +34,29 @@
   }
 
   &_middle{
-    position: relative;
+    position: fixed;
     .pic{
       width: 100%;
       height: calc(100vh - 100px);
     }
-    .noise{
-      position: fixed;
-      left: 0;
-      width: 100%;
-      height: 90%;
-    }
-    .noise{
-      background: url(nnize.png);
-      animation: noise_anima 1s steps(10) infinite;
-      opacity:0.1;
-    }
-    
-    @keyframes anima {
-      from { background-position: 0 0;
-       }
-      to { background-position: 123px 456px; 
+      .noise{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 90%;
       }
-    }
+      .noise{
+        background: url(nnize.png);
+        animation: noise_anima 1s steps(10) infinite;
+        opacity:0.1;
+      }
+      
+      @keyframes anima {
+        from { background-position: 0 0;
+        }
+        to { background-position: 123px 456px; 
+        }
+      }
 
 
     .logo{
@@ -147,13 +147,14 @@
       }
     }
   }
+  
   &_send{
     font-weight: bold;
     font-size: 70px;
     text-align:center;
     position: absolute;
-    height: 26%;
-    bottom: 9px;
+    height: 20%;
+    top: 75%;
     right: 35.5%;
     text-decoration: line-through;
     background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
