@@ -43,7 +43,7 @@ body{
 
 
   &_middle{
-    height: calc(100% - 100px);
+    height: 100% ;
     width: 100%;
     position: relative;
     .pic{
@@ -71,11 +71,10 @@ body{
       }
       &_main{
         width: 50%;
-        height: calc(100% - 100px);
+        height: 100%;
         position: absolute;
         top: 0;
         left: 25%;
-        padding: 0% 5% 0% 5%;
         .flash {
           text-align: center;
           height: 500px;
