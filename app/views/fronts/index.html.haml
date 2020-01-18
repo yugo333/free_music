@@ -11,20 +11,24 @@
       = link_to "https://www.youtube.com/channel/UChAhO3nKwVdZ5GYMF-HkE1g?view_as=subscriber", class: "contents__btn" do
         = icon('fab', 'youtube',class: 'icon')
         youtube_
+
+
   .front_middle
     %img{:alt => "mpc3000pic", :src => "NPHybAPgdWZZy5T1576731665_1576731679.png", :title => "mpc3000",:class =>"pic"}/
-    .noise
-    %img{:alt => "ni", :src => "nnize.png", :title => "noise", :class =>"noise"}/
-    .flash
-      .skew
-        .glitch
-          %img{:alt => "loglog", :src => "U5.png",:class => "logo"}/
-  .front_send
-    = link_to musics_path(@music) do
-      Download 
-.login
-= link_to "ログイン", new_user_session_path, class: "bottme__right--btn"
--# = link_to "新規登録", new_user_registration_path, class: "bottme__right--btn"
-= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "bottme__right--btn"
--# = link_to "新規投稿", new_post_path, class: "bottme__right--btn"
+    .front_middle_noize
+      %img{:alt => "ni", :src => "nnize.png", :title => "noise", :class =>"noise"}/
+      .front_middle_noize_main
+        .flash
+          .skew
+            .glitch
+              %img{:alt => "loglog", :src => "U5.png",:class => "logo"}/
+        .front_middle_noize_main_send
+          = link_to musics_path(@music) do
+            Download 
+  .login
+  = link_to "ログイン", new_user_session_path, class: "bottme__right--btn"
+  -# = link_to "新規登録", new_user_registration_path, class: "bottme__right--btn"
+  = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "bottme__right--btn"
+  -# = link_to "新規投稿", new_post_path, class: "bottme__right--btn"
+
 
