@@ -1,6 +1,6 @@
 .front
   .front_top
-    The Fuck Sound
+    The Free Sound
     .front_bottom
       = link_to "https://www.instagram.com/___u5____/?hl=ja", class: "contents__btn" do
         = icon('fab', 'instagram',class: 'icon')
@@ -26,9 +26,9 @@
           = link_to musics_path(@music) do
             Download 
   .login
-  -# = link_to "ログイン", new_user_session_path, class: "bottme__right--btn"
-  -# = link_to "新規登録", new_user_registration_path, class: "bottme__right--btn"
-  -# = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "bottme__right--btn"
+  = link_to "ログイン", new_user_session_path, class: "bottme__right--btn"
+  = link_to "新規登録", new_user_registration_path, class: "bottme__right--btn"
+  = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "bottme__right--btn"
   -# = link_to "新規投稿", new_post_path, class: "bottme__right--btn"
 
 
