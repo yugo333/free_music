@@ -3,6 +3,10 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Sound
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'   , 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application' , 'data-turbolinks-track': 'reload'
+    
     -# %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %link{:href => "https://use.fontawesome.com/releases/v5.6.1/css/all.css", :rel => "stylesheet"}/
     -# %link{:href => "musics.scss", :rel => "stylesheet"}/
@@ -10,12 +14,6 @@
     -# %script{:src => "musics.js", :type => "text/javascript"}
     %script{:async => "", :src => "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
 
-
-
-    = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-    
   %body
     = yield
 
