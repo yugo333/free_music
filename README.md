@@ -7,9 +7,6 @@
 ***
 
 
-<img src="" width="150px">
-
-
 # :globe_with_meridians: URL
 http://18.178.185.173/
 ***
