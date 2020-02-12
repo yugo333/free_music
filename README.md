@@ -12,7 +12,9 @@ http://18.178.185.173/
 ***
 　　
 # :new_moon: Description
-<img width="1400" alt="www" src="https://user-images.githubusercontent.com/58324998/74331810-cfedd880-4dd7-11ea-95bf-31e0e445e1f5.gif">
+
+![k0r88-d9g92](https://user-images.githubusercontent.com/58324998/74333258-eb0e1780-4dda-11ea-997c-b9e5d8c78571.gif)
+
 
 ### ダウンロードサイト:
 無料ダウンロードサイトを制作いたしました、現在はまだ調整中ではございますが
